@@ -1,194 +1,670 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
- 
-  <title>Home page</title>
-<style type="text/css">
-  body,ul,li{
-  margin:0px;
-  padding:0px;
-  
-  }
-  ul,li{list-style:none}
-  body {
-  background-color:#ccc;
-  font-size:14px;
-  
-  }
-  .box{
-  width:1000px;
-  
-  margin:0px auto;
-  background-color:#ccc;
-  border:1px solid red;
-  }
-  header{
-	height:60px;
-	line-height:60px;
-	background-color:#990000;
-	text-align:center;
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Logistics Co., Ltd</title>
+<style>
+.body1{
 	font-family:Arial, Helvetica, sans-serif;
-	color:white;
-	font-size:30px;
-  }
-  nav{
-  height:40px;
-  line-height:40px;
-  background-color:#ff99ff;
-  }
-  nav li{
-	float:left;
-	border:1px solid red;
-	background-color:#cc9966;
-	color:white;
-	padding:0px 10px;
-	font-size:18px;
-	font-family:Arial, Helvetica, sans-serif;
-  }
-  section{
-  width:800px;
-  height:500px;
-  
-  
-  float:left;
-  }
- 
-  aside{
-  width:195px;
-  height:500px;
-  background-color:#999966;
-   
-  float:right;
-  }
-  footer{
-  height:30px;
-  line-height:30px;
-  text-align:center;
-  color:white;
-  background-color:#cc6699;
-  clear:both;
-  }
-  #dome{
-  width:150px;
-  height:500px;
-  
-  margin:0px auto;
-  padding:0px 16px;
-  
-  overflow:hidden;//超出的部分隐藏
-  }
-  #dome li{
-  padding:9px 0px;
-  }
-  </style>
-
- </head>
- <body>
- <div class="box">
- <header>欢迎光临！</header>
- <nav>
- <ul>
- <li><a href=""https://charliexie2014.github.io/"">主页</a></li>
- <li><a href="#">关于我</a></li>
- <li><a href="Quotation Sheet.html">Quotation Sheet</a></li>
-<li><a href="https://charliexie2014.github.io/">联系我</a></li>
- </ul>
-</nav>
-<section>
-
-有女同车，颜如舜华。将翱将翔，佩玉琼琚。彼美孟姜，洵美且都。<br>
-有女同行，颜如舜英。将翱将翔，佩玉将将。彼美孟姜，德音不忘。<br>
-
-译文<br>
-姑娘和我同乘车，容貌就像花一样。体态轻盈如飞鸟，珍贵佩玉泛光芒。她是美丽姜姑娘，举止娴雅又大方。<br>
-姑娘和我同路行，容貌就像木槿花。体态轻盈像鸟翔，佩玉锵锵悦耳响。美丽姑娘她姓姜，美好声誉人难忘。<br>
-<!--<details><b>识人法则</b></details>-->
-
-
-<!--<progress id="pro" style="width:800px;" max="50" value="0"></progress>-->
-<img width=800px height=400px src="px.jpg" /><br><br>
-<script>
-//获取对象
-var pro=document.getElementById("pro");
-var i=0;
-window.setInterval("star2()",100);
-function star2(){
-pro.value=i;
-i++;
-if(pro.value==pro.max){
-i=0;
+	/* [disabled]font-size:12px; */
+	font-size:14px;
+	background-color:#ccc;
+	margin:0;
+	padding:0;
+	
+border:2px solid #0000cc;
+	width:960px;
+	margin:0px auto;
+	padding:20px;
+	background-color:#00cc33;
+	box-shadow:60px 60px 60px #0099cc;
+	border-image:url(001.jpg) 5 5 round;
+	border-radius:30px;
 }
-}
-</script>
-</section>
-
-
-<aside>
-<div id="dome" >
-	<div id="dome1">
-		<ul>	<li>静女</li>		
-			<li>静女其姝，</li>
-            <li>俟我于城隅。</li>
-			<li>爱而不见，</li>
-            <li>搔首踟蹰。</li>
-			<li>静女其娈，</li>
-            <li>贻我彤管。</li>
-			<li>彤管有炜，</li>
-           <li> 说怿女美</li>
-			<li>自牧归荑，</li>
-            <li>洵美且异。</li>
-			<li>匪女之为美，</li>
-            <li>美人之贻。</li>
-			
-		</ul>
-	</div>
-	<div id="dome2"></div>
- </div>
-  <script>
-  window.onload=function (){
-	//获取3个Div的id
-  var dome =document.getElementById("dome");
-  var dome1 =document.getElementById("dome1");
-  var dome2 =document.getElementById("dome2");
-	//获取3个DIV的高度
-   dome1.style.height=dome.offsetHeight+"px";
-   dome2.style.height=dome.offsetHeight+"px";
-	//将dome1的内容拷贝到dome2中
-   dome2.innerHTML=dome1.innerHTML;
-   //dome的scrllTop属性来实现滚动
-   window.setInterval("start2(dome)",20);
-  }
-  function start2(dome){
-  if(dome.scrollTop==dome.offsetHeight){
-	dome.scrollTop=0;
-  }else{
-	dome.scrollTop++;//向上滚动的距离
+.div1{
+	width:80%;
+	border:groove;
+	margin:5% auto;
+	padding:10px;
+	background-color:#0F0;
+	
 	}
-  }
+</style>
+</head>
+
+<body class="body1">
+<a href="index.html">Return home</a>
+<div class="div1">
+CL Logistics Co., Ltd. is a licensed International freight forwarder established since 2003 and amongst the first batch of operators being awarded the NVOCC license by the China Ministry of Transportation. We are uniquely positioned to handle all aspects of your shipment from raw material to end user. Our full array of ocean related services include Ocean forwarding, NVOCC consolidation as well as custom-made supply chain management services.
+
+Our experienced professionals are trained to guide you through the complexities of global shipping and are committed to providing 'YOU' our valuable customer with the most personable services in the ever-competitive shipping industry.
+
+Headquartered in Shenzhen, we have successfully established wholly owned branch offices in Shanghai, Tianjin, Xian and Qingdao over the years. To further enhance our services, we work with selected agents in Dalian, Guangzhou, Nanjing, Ningbo, Shenzhen, Xiamen, Taiwan and Hong Kong. Our overseas partners and agents in North America, Middle East, Europe and Asia complement our extensive networks in the PRC.
+
+Our goal is to reduce your burden from all shipping and logistics related issues to allow you to focus and grow your core business as we believe that we are a natural extension to your business. By selecting Oceanlink as your preferred forwarder, you will get to enjoy the expertise and leveraged pricing with many leading carriers of the World without contractual liability.
+
+Our commitment to focus on Total Solution and Total Customer Satisfaction (TCS) is our top priority and we take pride in delivering world-class services to you because we believe in growing with your business.
+
+Make  CL Logisitcs  your first choice!
+</div>
+EXPORT<hr>
+<div>
+<table width="80%" border="1" align="center" style="text-align:center">
+  <tr>
+    <th scope="col"rowspan="2">CARRIER</th>
+    <th scope="col"rowspan="2">POL</th>
+    <th scope="col"rowspan="2">POD</th>
+    <th scope="col" colspan="3">O/F($)</th>
+    <th scope="col"colspan="3">LSS($)</th>
+    <th scope="col"rowspan="2">ENS($)</th>
+    <th scope="col"rowspan="2">VILIDITY</th>  
+     <th scope="col"rowspan="2">MARK</th>  
+     <th scope="col"rowspan="2">Schedules</th>  
+  </tr>
+  <tr>
+    <td>20GP</td>
+    <td>40GP</td>
+    <td>40HQ</td>
+     <td>20GP</td>
+    <td>40GP</td>
+    <td>40HQ</td>
+   
+   
+  </tr>
+  <tr>
+    <td rowspan="9">APL</td>
+    <td>DALIAN</td>
+    <td  rowspan="9">Europe base ports</td>
+    <td>800</td>
+    <td>1450</td>
+    <td>1500</td>
+   
+    <td rowspan="9">15</td>
+    <td rowspan="9">30</td>
+     <td rowspan="9">30</td>
+    <td rowspan="9">25</td>
+    <td rowspan="9">15-JUL</td>
+      <td rowspan="9">&nbsp;</td>
+      <td rowspan="9"><a href="http://www.cma-cgm.com/ebusiness/schedules">OCEAN Alliance</a></td>
+  </tr>
+  <tr>
+   <td>TIANJIN</td>
+    <td>800</td>
+    <td>1450</td>
+    <td>1500</td>
   
-  </script>
-</aside>
-<audio autoplay="autoplay">
-<source src="bsdts.mp3" type="audio/mpeg" loop="loop">
+   
+   
+  </tr>
+  <tr>
+   <td>QINGDAO</td>
+    <td>800</td>
+    <td>1450</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+   <td>SHANGHAI</td>
+    <td>800</td>
+    <td>1450</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+   <td>NINGBO</td>
+    <td>800</td>
+    <td>1450</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+  
+    <td>XIAMEN</td>
+     <td>800</td>
+    <td>1450</td>
+    <td>1500</td>
+  
+ 
+ 
+  </tr>
+  <tr>
+   
+    <td>SHEKOU</td>
+    <td>800</td>
+    <td>1450</td>
+    <td>1500</td>
+ 
+    
+    
+  </tr>
+  <tr>
+   <td>YANTIAN</td>
+  <td>800</td>
+    <td>1450</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+   <td>HONGKONG</td>
+    <td>800</td>
+    <td>1450</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+    <td rowspan="9">HPL</td>
+    <td>DALIAN</td>
+    <td  rowspan="9">Europe base ports</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   
+    <td rowspan="9">20</td>
+    <td rowspan="9">40</td>
+     <td rowspan="9">40</td>
+    <td rowspan="9">25</td>
+    <td rowspan="9">15-JUL</td>
+      <td rowspan="9">&nbsp;</td>
+        <td rowspan="9"><a href="https://www.hapag-lloyd.com/en/home.html">THE Alliance</a></td>
+  </tr>
+  <tr>
+   <td>TIANJIN</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+   
+   
+  </tr>
+  <tr>
+   <td>QINGDAO</td>
+    
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+   
+   
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+   <td>SHANGHAI</td>
+    
+   
+    
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   
+  </tr>
+  <tr>
+   <td>NINGBO</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+  
+   
+    <td>&nbsp;</td>
+   
+  </tr>
+  <tr>
+  
+    <td>XIAMEN</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+ 
+ 
+  </tr>
+  <tr>
+   
+    <td>SHEKOU</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+ 
+    
+    
+  </tr>
+  <tr>
+   <td>YANTIAN</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+
+ 
+  
+  </tr>
+  <tr>
+   <td>HONGKONG</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   
+  
+ 
+   
+  </tr>
+  <tr>
+    <td rowspan="9">MSC</td>
+    <td>DALIAN</td>
+    <td  rowspan="9">Europe base ports</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   
+    <td rowspan="9">15</td>
+    <td rowspan="9">30</td>
+     <td rowspan="9">30</td>
+    <td rowspan="9">25</td>
+    <td rowspan="9">15-JUL</td>
+      <td rowspan="9">&nbsp;</td>
+       <td rowspan="9"><a href="https://www.msc.com/search-schedules?lang=en-gb">2M Alliance</a></td>
+  </tr>
+  <tr>
+   <td>TIANJIN</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+   
+   
+  </tr>
+  <tr>
+   <td>QINGDAO</td>
+    
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+   
+   
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+   <td>SHANGHAI</td>
+    
+   
+    
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   
+  </tr>
+  <tr>
+   <td>NINGBO</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+  
+   
+    <td>&nbsp;</td>
+   
+  </tr>
+  <tr>
+  
+    <td>XIAMEN</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+ 
+ 
+  </tr>
+  <tr>
+   
+    <td>SHEKOU</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+ 
+    
+    
+  </tr>
+  <tr>
+   <td>YANTIAN</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+
+ 
+  
+  </tr>
+  <tr>
+   <td>HONGKONG</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   
+  
+ 
+   
+  </tr>
+ 
+</table>
+
+</div>
+IMPORT<hr>
+<div>
+<table width="80%" border="1" align="center" style="text-align:center">
+  <tr>
+    <th scope="col"rowspan="2">CARRIER</th>
+    <th scope="col"rowspan="2">POD</th>
+    <th scope="col"rowspan="2">POL</th>
+    <th scope="col" colspan="3">O/F($)</th>
+    <th scope="col"colspan="3">LSS($)</th>
+    <th scope="col"rowspan="2">ENS($)</th>
+    <th scope="col"rowspan="2">VILIDITY</th>  
+     <th scope="col"rowspan="2">MARK</th>  
+      <th scope="col"rowspan="2">Schedules</th>  
+  </tr>
+  <tr>
+    <td>20GP</td>
+    <td>40GP</td>
+    <td>40HQ</td>
+     <td>20GP</td>
+    <td>40GP</td>
+    <td>40HQ</td>
+   
+   
+  </tr>
+  <tr>
+    <td rowspan="9">OCEAN Alliance</td>
+    <td>DALIAN</td>
+    <td  rowspan="9">Europe base ports</td>
+    <td>500</td>
+    <td>1000</td>
+    <td>1000</td>
+   
+    <td rowspan="9">15</td>
+    <td rowspan="9">30</td>
+     <td rowspan="9">30</td>
+    <td rowspan="9">25</td>
+    <td rowspan="9">30-JUL</td>
+      <td rowspan="9">&nbsp;</td>
+       <td rowspan="9"><a href="http://www.cma-cgm.com/ebusiness/schedules">OCEAN Alliance</a></td>
+      
+  </tr>
+  <tr>
+   <td>TIANJIN</td>
+     <td>600</td>
+    <td>1200</td>
+    <td>1250</td>
+  
+   
+   
+  </tr>
+  <tr>
+   <td>QINGDAO</td>
+   <td>500</td>
+    <td>1000</td>
+    <td>1000</td>
+  </tr>
+  <tr>
+   <td>SHANGHAI</td>
+    
+   
+   <td>500</td>
+    <td>1000</td>
+    <td>1000</td>
+   
+  </tr>
+  <tr>
+   <td>NINGBO</td>
+    <td>500</td>
+    <td>1000</td>
+    <td>1000</td>
+   
+  </tr>
+  <tr>
+  
+    <td>XIAMEN</td>
+    <td>500</td>
+    <td>1000</td>
+    <td>1000</td>
+  
+ 
+ 
+  </tr>
+  <tr>
+   
+    <td>SHEKOU</td>
+    <td>500</td>
+    <td>1000</td>
+    <td>1000</td>
+ 
+    
+    
+  </tr>
+  <tr>
+   <td>YANTIAN</td>
+    <td>500</td>
+    <td>1000</td>
+    <td>1000</td>
+  
+
+ 
+  
+  </tr>
+  <tr>
+   <td>HONGKONG</td>
+    <td>500</td>
+    <td>1000</td>
+    <td>1000</td>
+   
+  
+ 
+   
+  </tr>
+  <tr>
+    <td rowspan="9">THE Alliance</td>
+    <td>DALIAN</td>
+    <td  rowspan="9">Europe base ports</td>
+    <td>700</td>
+    <td>1400</td>
+    <td>1400</td>
+   
+    <td rowspan="9">15</td>
+    <td rowspan="9">30</td>
+     <td rowspan="9">30</td>
+    <td rowspan="9">25</td>
+    <td rowspan="9">15-JUL</td>
+      <td rowspan="9">&nbsp;</td>
+      <td rowspan="9"><a href="https://www.hapag-lloyd.com/en/home.html">THE Alliance</a></td>
+      
+  </tr>
+  <tr>
+   <td>TIANJIN</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+   
+   
+  </tr>
+  <tr>
+   <td>QINGDAO</td>
+    
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+   
+   
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+   <td>SHANGHAI</td>
+    
+   
+    
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   
+  </tr>
+  <tr>
+   <td>NINGBO</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+  
+   
+    <td>&nbsp;</td>
+   
+  </tr>
+  <tr>
+  
+    <td>XIAMEN</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+ 
+ 
+  </tr>
+  <tr>
+   
+    <td>SHEKOU</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+ 
+    
+    
+  </tr>
+  <tr>
+   <td>YANTIAN</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+
+ 
+  
+  </tr>
+  <tr>
+   <td>HONGKONG</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   
+  
+ 
+   
+  </tr>
+  <tr>
+    <td rowspan="9">2M Alliance</td>
+    <td>DALIAN</td>
+    <td  rowspan="9">Europe base ports</td>
+    <td>600</td>
+    <td>1200</td>
+    <td>1200</td>
+   
+    <td rowspan="9">15</td>
+    <td rowspan="9">30</td>
+     <td rowspan="9">30</td>
+    <td rowspan="9">25</td>
+    <td rowspan="9">30-JUL</td>
+      <td rowspan="9">&nbsp;</td>
+        <td rowspan="9"><a href="https://www.msc.com/search-schedules?lang=en-gb">2M Alliance</a></td>
+  </tr>
+  <tr>
+   <td>TIANJIN</td>
+    <td>600</td>
+    <td>1200</td>
+    <td>1200</td>
+  
+   
+   
+  </tr>
+  <tr>
+   <td>QINGDAO</td>
+    
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+   
+   
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+   <td>SHANGHAI</td>
+    
+   
+    
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   
+  </tr>
+  <tr>
+   <td>NINGBO</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+  
+   
+    <td>&nbsp;</td>
+   
+  </tr>
+  <tr>
+  
+    <td>XIAMEN</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+ 
+ 
+  </tr>
+  <tr>
+   
+    <td>SHEKOU</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+ 
+    
+    
+  </tr>
+  <tr>
+   <td>YANTIAN</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  
+
+ 
+  
+  </tr>
+  <tr>
+   <td>HONGKONG</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   
+  
+ 
+   
+  </tr>
+ 
+</table>
+
+</div>
+<tr> 
+	<td height="26" valign="top"> <div align="center"><a href="mailto:2531763117@qq.com"><br>联系站长，送精美礼品一份,此物亲一口丰唇,趴上去隆胸,坐上去提臀,摸一下提神醒脑，抓一下神魂颠倒，此物不卖,只送不懂的，别问喜欢就送一个你。<br>
+</a><a href=" https://charliexie2014.github.io/ " target="_blank">Return home</a><a href="mailto:2531763117@qq.com"> 投稿邮箱:给站长建议</a><br /> 粤ICP备0734679号CopyRight2009-2019,
+	</div></td>
+</tr> 
+	<audio autoplay="autoplay">
+<source src="Boss01/bsdts.mp3" type="audio/mpeg" loop="loop">
 </audio>
-
-
-<form name="form1" method="post" action="login.html">
-
-用户名:<input type="text" name="username"/>
-密码:<input type="password" name="userpad"/><br>
-
-颜色选择:<input type="color" name="color" ><br>
-邮箱:<input type="email" name="email" ><br>
-网址:<input type="url" name="url" ><br>
-日历:<input type="date" name="date" ><br>
-<input type="submit" value="提交注册">
-</form>
-
- <footer>HTML版权所有-Charlie-2016</footer>
-
- </div>
-  
- </body>
+</body>
+<script language=javascript>
+function click() {
+alert('Charlie 版权所有Tel:13632811048') }
+function click1() {
+if (event.button==2) {alert('不要了吧，这样你也行？Tel:13632811048') }}
+function CtrlKeyDown(){
+if (event.ctrlKey) {alert('What are you doing ? copy ?') }}
+document.onkeydown=CtrlKeyDown;
+document.onselectstart=click;
+document.onmousedown=click1;
+</script>
 </html>
