@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ 
+  <title>Home page</title>
+<style type="text/css">
+  body,ul,li{
+  margin:0px;
+  padding:0px;
+  
+  }
+  ul,li{list-style:none}
+  body {
+  background-color:#ccc;
+  font-size:14px;
+  
+  }
+  .box{
+  width:1000px;
+  
+  margin:0px auto;
+  background-color:#ccc;
+  border:1px solid red;
+  }
+  header{
+	height:60px;
+	line-height:60px;
+	background-color:#990000;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	color:white;
+	font-size:30px;
+  }
+  nav{
+  height:40px;
+  line-height:40px;
+  background-color:#ff99ff;
+  }
+  nav li{
+	float:left;
+	border:1px solid red;
+	background-color:#cc9966;
+	color:white;
+	padding:0px 10px;
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+  }
+  section{
+  width:800px;
+  height:500px;
+  
+  
+  float:left;
+  }
+ 
+  aside{
+  width:195px;
+  height:500px;
+  background-color:#999966;
+   
+  float:right;
+  }
+  footer{
+  height:30px;
+  line-height:30px;
+  text-align:center;
+  color:white;
+  background-color:#cc6699;
+  clear:both;
+  }
+  #dome{
+  width:150px;
+  height:500px;
+  
+  margin:0px auto;
+  padding:0px 16px;
+  
+  overflow:hidden;//超出的部分隐藏
+  }
+  #dome li{
+  padding:9px 0px;
+  }
+  </style>
+
+ </head>
+ <body>
+ <div class="box">
+ <header>欢迎光临！</header>
+ <nav>
+ <ul>
+ <li><a href=""https://charliexie2014.github.io/"">主页</a></li>
+ <li><a href="#">关于我</a></li>
+ <li><a href="Quotation Sheet.html">Quotation Sheet</a></li>
+<li><a href="https://charliexie2014.github.io/">联系我</a></li>
+ </ul>
+</nav>
+<section>
+
+有女同车，颜如舜华。将翱将翔，佩玉琼琚。彼美孟姜，洵美且都。<br>
+有女同行，颜如舜英。将翱将翔，佩玉将将。彼美孟姜，德音不忘。<br>
+
+译文<br>
+姑娘和我同乘车，容貌就像花一样。体态轻盈如飞鸟，珍贵佩玉泛光芒。她是美丽姜姑娘，举止娴雅又大方。<br>
+姑娘和我同路行，容貌就像木槿花。体态轻盈像鸟翔，佩玉锵锵悦耳响。美丽姑娘她姓姜，美好声誉人难忘。<br>
+<!--<details><b>识人法则</b></details>-->
+
+
+<!--<progress id="pro" style="width:800px;" max="50" value="0"></progress>-->
+<img width=800px height=400px src="px.jpg" /><br><br>
+<script>
+//获取对象
+var pro=document.getElementById("pro");
+var i=0;
+window.setInterval("star2()",100);
+function star2(){
+pro.value=i;
+i++;
+if(pro.value==pro.max){
+i=0;
+}
+}
+</script>
+</section>
+
+
+<aside>
+<div id="dome" >
+	<div id="dome1">
+		<ul>	<li>静女</li>		
+			<li>静女其姝，</li>
+            <li>俟我于城隅。</li>
+			<li>爱而不见，</li>
+            <li>搔首踟蹰。</li>
+			<li>静女其娈，</li>
+            <li>贻我彤管。</li>
+			<li>彤管有炜，</li>
+           <li> 说怿女美</li>
+			<li>自牧归荑，</li>
+            <li>洵美且异。</li>
+			<li>匪女之为美，</li>
+            <li>美人之贻。</li>
+			
+		</ul>
+	</div>
+	<div id="dome2"></div>
+ </div>
+  <script>
+  window.onload=function (){
+	//获取3个Div的id
+  var dome =document.getElementById("dome");
+  var dome1 =document.getElementById("dome1");
+  var dome2 =document.getElementById("dome2");
+	//获取3个DIV的高度
+   dome1.style.height=dome.offsetHeight+"px";
+   dome2.style.height=dome.offsetHeight+"px";
+	//将dome1的内容拷贝到dome2中
+   dome2.innerHTML=dome1.innerHTML;
+   //dome的scrllTop属性来实现滚动
+   window.setInterval("start2(dome)",20);
+  }
+  function start2(dome){
+  if(dome.scrollTop==dome.offsetHeight){
+	dome.scrollTop=0;
+  }else{
+	dome.scrollTop++;//向上滚动的距离
+	}
+  }
+  
+  </script>
+</aside>
+<audio autoplay="autoplay">
+<source src="bsdts.mp3" type="audio/mpeg" loop="loop">
+</audio>
+
+
+<form name="form1" method="post" action="login.html">
+
+用户名:<input type="text" name="username"/>
+密码:<input type="password" name="userpad"/><br>
+
+颜色选择:<input type="color" name="color" ><br>
+邮箱:<input type="email" name="email" ><br>
+网址:<input type="url" name="url" ><br>
+日历:<input type="date" name="date" ><br>
+<input type="submit" value="提交注册">
+</form>
+
+ <footer>HTML版权所有-Charlie-2016</footer>
+
+ </div>
+  
+ </body>
+</html>
